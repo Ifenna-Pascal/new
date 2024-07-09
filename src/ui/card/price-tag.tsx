@@ -10,7 +10,9 @@ const cardVariants = cva(
                 default: 'rounded-[10px] hover:bg-primary-gradient bg-transparent border border-[#302E2E]',
                 active: 'bg-primary-gradient',
                 gradientLight: 'bg-light-right border border-[#302E2E]',
-                gradientDark: 'bg-light-left border border-[#302E2E]'
+                gradientDark: 'bg-light-left border border-[#302E2E]',
+                cardGradient: 'bg-gradient-card border border-[#302E2E]',
+                cardGradientTwo: 'gradient-card-two border border-[#302E2E]'
             },
             size: {
                 lg: 'h-[244px] rounded-[20px]',

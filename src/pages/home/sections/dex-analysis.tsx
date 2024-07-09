@@ -55,7 +55,7 @@ const sliderRef = useRef<any>(null);
            {
                 DexInfo.map((info, index) => {
                     return (
-                        <CardLayout key={index} className='px-6 py-16' size={'lg'} variant={index === 0 ? 'gradientDark' : 'gradientLight'}>
+                        <CardLayout key={index} className='px-6 py-16' size={'lg'} variant={index === 0 ? 'cardGradient' : 'cardGradient'}>
                             <h2 className='font-montserrat font-semibold text-[20px] text-white pb-4'>{info.header}</h2>
                             <span className='text-gray-100 text-[16px] w-[395px] font-montserrat'>{info.content}</span>
                         </CardLayout>

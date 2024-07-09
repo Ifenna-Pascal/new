@@ -1,0 +1,9 @@
+
+
+.slick-slide {
+    padding: 0 10px; /* Adjust the padding value to create the desired gap */
+  }
+  
+  .slick-list {
+    margin: 0 -10px; /* Negative margin to counteract padding and maintain overall container width */
+  }

@@ -5,10 +5,12 @@ import twitter from './twitter.svg';
 import medium from './medium.svg';
 import arrowLeft from './arrow-left.svg';
 import arrowRight from './arrow-right.svg';
+import dollar from './dollar.svg'
 
 export const images = {
     logo,
     gridLines,
+    dollar,
     discord,
     twitter,
     medium,

@@ -26,6 +26,8 @@ export default {
         'grid-overlay': 'url("/images/grid-lines.svg")',
         'light-right': 'linear-gradient(45deg, #0303033B 43%, #31324282 100% )',
         'light-left': 'linear-gradient(to right, #313242 50%, #030303)',
+        'gradient-card': 'linear-gradient(to right, #0303033B, #31324282 )',
+        'gradient-card-two': 'linear-gradient(to right,  #31324282, #0303033B )',
         'spiral-img': 'url("/images/spiral.svg")',
         'elipse-img': 'url("/images/elipse.svg")',
         'a-spline-img': 'url("/images/a-spine.svg")',
