@@ -31,7 +31,7 @@ const sliderRef = useRef<any>(null);
     }
 
   return (
-    <div className='bg-black-100   pt-10 relative pb-24 w-full'>
+    <div className='bg-black-100   pt-24 relative pb-24 w-full'>
         <div className='flex-col  flex mx-auto items-center justify-center'>
             <h1 className='text-white w-[960px] font-semibold text-center font-montserrat text-[40px]/[50px]'>
                 DEX LP Tokens as Collateral 

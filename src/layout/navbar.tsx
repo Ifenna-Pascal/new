@@ -6,11 +6,11 @@ import { Button } from '../ui'
 const NavigationBar = () => {
 
   return (
-    <nav className='ssticky top-0 z-50 bg-black-100 flex items-center justify-between px-[60px] py-[25px]'>
+    <nav className='sticky top-0 z-50 bg-black-100 flex items-center justify-between px-[60px] py-[20px]'>
         <Link to={'/'}>
-            <img alt='logo-image' src={images.logo} />
+            <img alt='logo-image' src={images.logoMarkWhite} />
         </Link>
-        <ul className='flex gap-x-[10px] items-center'>
+        <ul className='flex gap-x-[15px] items-center'>
             {
                 navLinks.map((link, index) => {
                     return (

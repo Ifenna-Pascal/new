@@ -28,9 +28,11 @@ export default {
         'light-left': 'linear-gradient(to right, #313242 50%, #030303)',
         'gradient-card': 'linear-gradient(to right, #0303033B, #31324282 )',
         'gradient-card-two': 'linear-gradient(to right,  #31324282, #0303033B )',
-        'spiral-img': 'url("/images/spiral.svg")',
+        'spiral-img': 'url("/images/spiral-2.svg")',
         'elipse-img': 'url("/images/elipse.svg")',
         'a-spline-img': 'url("/images/a-spine.svg")',
+        'backdrop': 'url("/images/backdrop.svg")',
+        'dark-bg': 'url("/images/dark-bg.svg")'
       }
     },
   },

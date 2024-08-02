@@ -1,14 +1,36 @@
+import { useEffect } from 'react'
 import Footer from '../../layout/footer'
-import { ASpline, DexAnalysis, FAQ, HeroSection, Staking } from './sections'
+import NavigationBar from '../../layout/navbar'
+import { ASpline, DexAnalysis, HeroSection, Staking } from './sections'
+import BlogSection from './sections/blog'
+import HowItWorks from './sections/how-it-works'
+import Paterners from './sections/paterners'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const HomePage = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration
+
+    })
+  })
+
+
   return (
     <div  className='bg-black-100'>
+        {/* <div className=' relative bg-cover bg-backdrop bg-no-repeat'> */}
+        <NavigationBar />
         <HeroSection />
-        <DexAnalysis />
-        <Staking />
+        {/* <div className='bg-dark-bg h-[300px] bg-cover z-50 absolute w-full right-0 '></div> */}
+        {/* </div> */}
         <ASpline />
-        <FAQ />
+        <HowItWorks />
+        <Staking />
+        <DexAnalysis />
+        <Paterners />
+        <BlogSection />
         <Footer />
     </div>
   )

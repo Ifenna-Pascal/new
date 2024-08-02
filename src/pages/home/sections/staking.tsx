@@ -38,7 +38,7 @@ const Staking = () => {
     autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: '0px',
-    slidesToScroll: 1,
+    slidesToScroll: 2,
   };
 
   const settingsTwo = {

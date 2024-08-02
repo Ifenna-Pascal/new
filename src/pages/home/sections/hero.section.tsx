@@ -1,17 +1,14 @@
-import NavigationBar from '../../../layout/navbar'
 import { Button, CardLayout } from '../../../ui'
 
 const HeroSection = () => {
   return (
-    <div className='h-screen relative  bg-black-100 '>
-        {/* <div className="absolute bg-purple-overlay  bg-contain bg-no-repeat h-[900px] -top-10  w-full"></div> */}
-        <NavigationBar />
+    <div className='h-screen relative   bg-black-100 '>
         <div className='w-full container h-[450px] bg-no-repeat bg-cover flex-col flex mx-auto items-center justify-center '>
           <div className='flex-col relative flex mx-auto items-center justify-center'>
-            <h1 className='text-white relative w-[960px] text-center font-inter text-[64px]/[75px]'>
-              Your One Stop Place to Borrow and Earn in DeFi	
-              </h1>
-              <p className='text-[18px] w-[395px] pt-5 font-inter text-center text-gray-100'>Earn interest and borrow assets across pools on Nebula</p>
+            <h1 className='text-white relative w-[960px] text-center font-[700] font-inter text-[86px]/[99px]'>
+                Nebula Protocol
+            </h1>
+              <p className='text-[18px] w-[395px] pt-5 font-inter text-center text-gray-100'>Borrow, lend, and earn interest</p>
               <Button className='w-[187px] h-[56px] mt-6'>Launch App</Button>  
           </div>        
         </div>
@@ -22,11 +19,11 @@ const HeroSection = () => {
           </CardLayout>
           <CardLayout size={'sm'}>
             <span className='text-gray-100 font-[16px] font-montserrat mb-4'>Market Size</span>
-            <h2 className='font-montserrat font-semibold text-[24px] text-white'>$ 2,478,890,999.32</h2>
+            <h2 className='font-montserrat font-semibold text-[24px] text-white'>$ 772,638,324.66</h2>
           </CardLayout>
           <CardLayout size={'sm'}>
             <span className='text-gray-100 font-[16px] font-montserrat mb-4'>Market Size</span>
-            <h2 className='font-montserrat font-semibold text-[24px] text-white'>$ 2,478,890,999.32</h2>
+            <h2 className='font-montserrat font-semibold text-[24px] text-white'>$ 1,706,446,827.45</h2>
           </CardLayout>
         </div>
     </div>

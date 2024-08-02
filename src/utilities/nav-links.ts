@@ -1,22 +1,22 @@
 export const navLinks = [
     {
         name: 'home',
+        link: '/home'
+    },
+    {
+        name: 'gitbook',
         link: '/'
     },
     {
-        name: 'market',
+        name: 'github',
         link: '/'
     },
     {
-        name: 'pool',
+        name: 'audit',
         link: '/'
     },
     {
-        name: 'governance',
-        link: '/'
-    },
-    {
-        name: 'doc',
+        name: 'FAQ',
         link: '/'
     },
 ]

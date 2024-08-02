@@ -17,7 +17,8 @@ const cardVariants = cva(
             size: {
                 lg: 'h-[244px] rounded-[20px]',
                 sm: 'h-[122px] rounded-[10px]',
-                md: 'h-[204px] rounded-[10px]'
+                md: 'h-[204px] rounded-[10px]',
+                full: 'h-[122px] flex-1 w-full rounded-[10px]'
             },
         },
         defaultVariants: {
@@ -35,7 +36,7 @@ export interface CardProps extends Div, VariantProps<typeof cardVariants> {
 const CardLayout = ({ children, variant,  size, className, ...props}: CardProps) => {
   return (
     <div
-    className={cn(cardVariants({ variant, size, className }))}
+    className={cn(cardVariants({className, variant, size,  }))}
     {...props}
     >
         {children}
