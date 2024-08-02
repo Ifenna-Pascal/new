@@ -13,7 +13,7 @@ interface IBlog {
 
 const Blog = ({title, desc, link, img}: IBlog) => {
     return (
-        <div className='w-full border rounded-[10px] border-[#302E2E]'>
+        <div className='w-full border min-h-[540px] rounded-[10px] border-[#302E2E]'>
         <div className='h-[211px] bg-[#fdf7f7] flex items-center rounded-t-[10px] justify-center w-full'>
             <img src={img} width={90} alt="cover-pic" />
         </div>
