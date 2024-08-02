@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { images } from '../assets/images'
 import { navLinks } from '../utilities/nav-links'
-import { Button } from '../ui'
 
 const NavigationBar = () => {
 
@@ -21,7 +20,8 @@ const NavigationBar = () => {
                 })
             } 
         </ul>
-        <Button>Launch Daap</Button>
+        {/* <Button>Launch Daap</Button> */}
+        <div></div>
     </nav>
   )
 }

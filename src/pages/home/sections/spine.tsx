@@ -18,7 +18,7 @@ const ASpline = () => {
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
         className='font-montserrat w-[950px] font-semibold text-[40px]/[50px]  text-white'>
-          Earn <span className='text-[#6868AE]'>$NEB</span> by borrowing, multiplying and profiting  with DeFi’s top protocols on <span className='text-[#6868AE]'>Nebula Protocol</span>
+          Earn <span className='text-[#6868AE]'>$NEB</span> by borrowing, multiplying and profiting  with DeFi’s top protocols on <span className='text-[#6868AE]'><br />Nebula Protocol</span>
         </h2>
         <Button 
         data-aos="fade-right"

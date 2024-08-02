@@ -12,7 +12,7 @@ const DexAnalysis = () => {
         arrows: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 2.5,
+        slidesToShow: 3,
         centerMode: true,
         centerPadding: '0px',
         slidesToScroll: 1,
