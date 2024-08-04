@@ -23,7 +23,6 @@ export default {
         'black-gradient': 'linear-gradient(to bottom, #01051000 0%, #010510 100% )',
         'black-gradient-2': 'linear-gradient(to bottom, #010510 0%, #010510 100% )',
         'purple-overlay': 'url("/images/purple-overlay.svg")',
-        'grid-overlay': 'url("/images/grid-lines.svg")',
         'light-right': 'linear-gradient(45deg, #0303033B 43%, #31324282 100% )',
         'light-left': 'linear-gradient(to right, #313242 50%, #030303)',
         'gradient-card': 'linear-gradient(to right, #0303033B, #31324282 )',
