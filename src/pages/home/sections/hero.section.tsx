@@ -2,7 +2,7 @@ import { Button, CardLayout } from '../../../ui'
 
 const HeroSection = () => {
   return (
-    <div className='h-screen relative   bg-black-100 '>
+    <div className='h-screen relative '>
         <div className='w-full container h-[450px] bg-no-repeat bg-cover flex-col flex mx-auto items-center justify-center '>
           <div className='flex-col relative flex mx-auto items-center justify-center'>
             <h1 className='text-white relative w-[960px] text-center font-[700] font-inter text-[86px]/[99px]'>

@@ -20,11 +20,11 @@ const HomePage = () => {
 
   return (
     <div  className='bg-black-100'>
-        {/* <div className=' relative bg-cover bg-backdrop bg-no-repeat'> */}
+        <div className='bg-backdrop bg-center -mt-9 bg-cover bg-no-repeat'>
+           
         <NavigationBar />
         <HeroSection />
-        {/* <div className='bg-dark-bg h-[300px] bg-cover z-50 absolute w-full right-0 '></div> */}
-        {/* </div> */}
+        </div>
         <ASpline />
         <HowItWorks />
         <Staking />

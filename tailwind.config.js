@@ -31,8 +31,11 @@ export default {
         'spiral-img': 'url("/images/spiral-2.svg")',
         'elipse-img': 'url("/images/elipse.svg")',
         'a-spline-img': 'url("/images/a-spine.svg")',
-        'backdrop': 'url("/images/backdrop.svg")',
-        'dark-bg': 'url("/images/dark-bg.svg")'
+        'backdrop': 'url("/images/first.svg")',
+        'second': 'url("/images/Second bg.png")',
+        'third': 'url("/images/Third bg.svg")',
+
+        'dark-bg': 'url("/images/dark-bg.svg")',
       }
     },
   },

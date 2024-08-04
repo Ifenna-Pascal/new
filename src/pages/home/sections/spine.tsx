@@ -12,7 +12,7 @@ const ASpline = () => {
   })
   
   return (
-    <div  className='bg-no-repeat bg-a-spline-img h-[600px] w-full px-10 flex flex-col '>
+    <div  className='bg-no-repeat bg-a-spline-img h-[600px] pt-16 w-full px-10 flex flex-col '>
         <h2  
         data-aos="fade-right"
         data-aos-offset="300"
