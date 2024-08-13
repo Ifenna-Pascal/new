@@ -13,14 +13,14 @@ const HomePage = () => {
   useEffect(() => {
     AOS.init({
       duration: 1200, // Animation duration
-
+      once: true
     })
   })
 
 
   return (
     <div  className='bg-black-100'>
-        <div className='bg-backdrop bg-center -mt-9 bg-cover bg-no-repeat'>
+        <div className='bg-backdrop bg-center lg:-mt-9 bg-cover bg-no-repeat'>
            
         <NavigationBar />
         <HeroSection />

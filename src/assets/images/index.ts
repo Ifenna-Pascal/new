@@ -10,9 +10,13 @@ import logoMark from './logo-mark.svg';
 import arrowRight2 from './arrow-right-2.svg';
 import partner1 from './pat1.svg';
 import logoMarkWhite from './logo-mark-white.svg';
-import partner2 from './pat2.svg'
+import partner2 from './pat2.svg';
+import menuIcon from './menu-icon.svg';
+import closeIcon from './close-icon.svg';
 export const images = {
     logo,
+    closeIcon,
+    menuIcon,
     logoMark,
     gridLines,
     dollar,

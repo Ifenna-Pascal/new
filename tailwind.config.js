@@ -19,7 +19,7 @@ export default {
         }
       },
       backgroundImage: {
-        'primary-gradient': 'linear-gradient(to right, #5356E0, #6868AE)',
+          'primary-gradient': 'linear-gradient(to right, #5356E0, #6868AE)',
         'black-gradient': 'linear-gradient(to bottom, #01051000 0%, #010510 100% )',
         'black-gradient-2': 'linear-gradient(to bottom, #010510 0%, #010510 100% )',
         'purple-overlay': 'url("/images/purple-overlay.svg")',
@@ -30,7 +30,7 @@ export default {
         'spiral-img': 'url("/images/spiral-2.svg")',
         'elipse-img': 'url("/images/elipse.svg")',
         'a-spline-img': 'url("/images/a-spine.svg")',
-        'backdrop': 'url("/images/first.svg")',
+        'backdrop': 'url("/images/main-hero.svg")',
         'second': 'url("/images/Second bg.png")',
         'third': 'url("/images/Third bg.svg")',
 

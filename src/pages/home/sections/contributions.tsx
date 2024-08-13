@@ -15,6 +15,37 @@ const Contributions = () => {
         centerMode: true,
         centerPadding: '0px',
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                  slidesToShow: 2.5,
+                  centerPadding: '20px',
+                  slidesToScroll: 1,
+                  autoPlay: true,
+                  infinite: true,
+                }
+              },
+              {
+                breakpoint: 1240,
+                settings: {
+                  slidesToShow: 2,
+                  centerPadding: '20px',
+                  slidesToScroll: 1,
+                  autoPlay: true,
+
+                }
+              },
+            {
+                breakpoint: 600,
+                settings: {
+                  autoPlay: true,
+                  slidesToShow: 1,
+                  centerPadding: '20px',
+                  slidesToScroll: 1
+                }
+              }
+        ],
         beforeChange: (_: number, newIndex: number) => setCurrentSlide(newIndex),
       };
       
@@ -30,9 +61,8 @@ const sliderRef = useRef<any>(null);
     }
 
   return (
-    <div className='bg-transparent relative pb-24 w-full'> 
-    {/* <div className=" absolute w-full h-full bg-no-repeat bottom"></div> */}
-        <div className='flex     w-full pr-6 gap-x-4 items-center justify-end'>
+    <div className='bg-transparent relative pb-16 lg:pb-24 w-full'> 
+        <div className='hidden lg:flex  w-full pr-6 gap-x-4 items-center justify-end'>
             <button disabled={currentSlide === 0} onClick={() => clickButton(false)}   className={`${currentSlide === 0 ? 'bg-[#111623]' : 'bg-primary-gradient'} border-none  h-[40px] flex items-center justify-center rounded-[40px]  w-[40px]`}>
                 <img alt='arrow-left' className='w-[20px] h-[20px]' src={images.arrowLeft} />
             </button>
@@ -40,18 +70,18 @@ const sliderRef = useRef<any>(null);
                 <img alt='arrow-left'  className='w-[15px] h-[15px]' src={images.arrowRight} />
             </button>
         </div>        
-        <div className='mt-8 px-6 w-full '>
+        <div className='mt-8 lg:px-6 w-full '>
            <Slider ref={sliderRef} {...settings}>
            {
                 contributions.map((info, index) => {
                     return (
                         <div 
-                        data-aos="fade-up"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine"
-                        key={index} className='px-6 border rounded-[14px] border-[#302E2E] h-[147px] py-6 flex items-center flex-col justify-between bg-[#010510]'>
-                            <p className='font-montserrat text-[16px] text-[#A9A9A9] pb-6'>{info.header}</p>
-                            <h2 className='text-white text-[24px] w-[395px] font-montserrat'>{info.content}</h2>
+                        // data-aos="fade-up"
+                        // data-aos-offset="300"
+                        // data-aos-easing="ease-in-sine"
+                        key={index} className='px-6 border rounded-[14px] border-[#302E2E] h-[135px] lg:h-[147px] py-6 flex items-center flex-col justify-between bg-[#010510]'>
+                            <p className='font-montserrat  text-[13px] lg:text-[16px] text-[#A9A9A9] pb-8 lg:pb-6'>{info.header}</p>
+                            <h2 className='text-white text-[16px] lg:text-[24px] lg:w-[395px] font-montserrat'>{info.content}</h2>
                         </div>
                     )
                 })
