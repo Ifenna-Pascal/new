@@ -1,3 +1,5 @@
+import { images } from "../assets/images"
+
 export const DexInfo = [
     {
         header: 'Increased Capital Efficiency',
@@ -66,5 +68,30 @@ export const blogData = [
     {
         title: 'Building on the Nibiru Ecosystem: A Strategic Choice for Nebula Protocol',
         desc: 'In the rapidly advancing field of blockchain technology, the decision of which blockchain ecosystem to build upon is crucial for the success and sustainability of any decentralized finance (DeFi) protocol.'
+    }
+]
+
+
+export const stakingOption = [
+    {
+        tokenName: 'USDC | Arbirum',
+        marketVolumne: '1,706,447.45',
+        logo: images.dollar
+    },
+    {
+        tokenName: 'ETH | Ethereum',
+        marketVolumne: '2,000,000',
+        logo: images.ethIcon
+    },
+
+    {
+        tokenName: 'BTC | Bitcoin',
+        marketVolumne: '1,000,000',
+        logo: images.btcIcon
+    },
+    {
+        tokenName: 'USDC | Arbirum',
+        marketVolumne: '1,706,447.45',
+        logo: images.dollar
     }
 ]

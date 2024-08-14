@@ -80,8 +80,8 @@ const sliderRef = useRef<any>(null);
                         // data-aos-offset="300"
                         // data-aos-easing="ease-in-sine"
                         key={index} className='px-6 border rounded-[14px] border-[#302E2E] h-[135px] lg:h-[147px] py-6 flex items-center flex-col justify-between bg-[#010510]'>
-                            <p className='font-montserrat  text-[13px] lg:text-[16px] text-[#A9A9A9] pb-8 lg:pb-6'>{info.header}</p>
-                            <h2 className='text-white text-[16px] lg:text-[24px] lg:w-[395px] font-montserrat'>{info.content}</h2>
+                            <p className='font-montserrat  text-[13px] lg:text-[16px] text-[#A9A9A9] pb-7 lg:pb-6'>{info.header}</p>
+                            <h2 className='text-white text-[14px] lg:text-[24px] lg:w-[395px] font-montserrat'>{info.content}</h2>
                         </div>
                     )
                 })

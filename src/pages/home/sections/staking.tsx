@@ -1,24 +1,30 @@
 import Slider from "react-slick";
-import { images } from "../../../assets/images"
 import { CardLayout } from "../../../ui"
+import { FC } from "react";
+import { stakingOption } from "../../../__mock_data__/dex-info";
 
-const CardFlow = () => {
+interface IProp {
+  icon: string;
+  marketVolume: string;
+  tokenName: string
+}
+
+const CardFlow:FC<IProp> = ({icon, marketVolume, tokenName}) => {
   
   return (
     <CardLayout variant={'cardGradient'}  size={'md'}>
       <div className="flex mb-5 items-center">
-        <img src={images.dollar} alt="dollar-img" className="mr-2 w-[40px] lg:w-[60px]" />
-        <span className="text-white font-montserrat text-[14px] lg:text-[16px] ">USDC</span>
-        <span className="text-gray-100 font-semibold text-[14px] lg:text-[16px] font-montserrat">|Arbitrum</span>
+        <img src={icon} alt="dollar-img" className="mr-2 w-[40px] lg:w-[50px]" />
+        <span className="text-white font-montserrat text-[14px] lg:text-[16px] ">{tokenName}</span>
       </div>
       <div className="flex items-center justify-between">
         <div className="flex flex-col">
         <span className='text-gray-100 text-[14px] lg:text-[16px] mb-3 font-montserrat'>Market Volume</span>
-        <h2 className='font-montserrat font-semibold text-[14px] lg:text-[20px] text-white pb-4'> $ 1,706,447.45</h2>
+        <h2 className='font-montserrat font-semibold text-[14px] lg:text-[20px] text-white pb-4'> $ {marketVolume}</h2>
         </div>
         <div className="flex flex-col">
         <span className='text-gray-100  text-[14px] lg:text-[16px] mb-3 font-montserrat'>Market Volume</span>
-        <h2 className='font-montserrat font-semibold text-[14px] lg:text-[20px] text-[#8D8FF9] pb-4'> $ 1,706,447.45</h2>
+        <h2 className='font-montserrat font-semibold text-[14px] lg:text-[20px] text-[#8D8FF9] pb-4'> $ {marketVolume}</h2>
         </div>
 
       </div>
@@ -132,9 +138,9 @@ const Staking = () => {
           <div className="mb-8">
           <Slider {...settings} >
             {
-              [1,2,3,4].map((_, index) => {
+              stakingOption.map((option, index) => {
                 return (
-                  <CardFlow key={index} />
+                  <CardFlow tokenName={option.tokenName} icon={option.logo} marketVolume={option.marketVolumne} key={index} />
                 )
               }) 
             }
@@ -143,9 +149,9 @@ const Staking = () => {
           <div>
           <Slider {...settingsTwo} >
             {
-              [1,2,3,4].map((_: number, index) => {
+              stakingOption.map((option, index) => {
                 return (
-                  <CardFlow key={index} />
+                  <CardFlow tokenName={option.tokenName} icon={option.logo} marketVolume={option.marketVolumne} key={index} />
                 )
               }) 
             }

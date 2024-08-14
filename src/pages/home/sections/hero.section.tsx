@@ -14,7 +14,7 @@ const HeroSection = () => {
         </div>
         <div className="flex px-8 mx-auto flex-col lg:flex-row  w-full lg:w-[1000px] mt-8 gap-y-8 lg:gap-y-0 lg:gap-x-6 items-center">
           <CardLayout size={'sm'} variant={'active'}>
-            <span className='text-black font-[16px] font-montserrat mb-4'>Market Size</span>
+            <span className='text-black  font-[16px] font-montserrat mb-4'>Market Size</span>
             <h2 className='font-montserrat font-semibold text-[24px] text-black-100'>$ 2,478,890,999.32</h2>
           </CardLayout>
           <CardLayout size={'sm'}>

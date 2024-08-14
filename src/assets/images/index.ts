@@ -13,11 +13,15 @@ import logoMarkWhite from './logo-mark-white.svg';
 import partner2 from './pat2.svg';
 import menuIcon from './menu-icon.svg';
 import closeIcon from './close-icon.svg';
+import btcIcon from './btc.svg';
+import ethIcon from './eth-icon.svg';
 export const images = {
     logo,
+    btcIcon,
     closeIcon,
     menuIcon,
     logoMark,
+    ethIcon,
     gridLines,
     dollar,
     discord,

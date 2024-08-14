@@ -33,7 +33,7 @@ export default {
         'backdrop': 'url("/images/main-hero.svg")',
         'second': 'url("/images/Second bg.png")',
         'third': 'url("/images/Third bg.svg")',
-
+        'works': 'url("images/works.svg")',
         'dark-bg': 'url("/images/dark-bg.svg")',
       }
     },

@@ -81,14 +81,13 @@ const sliderRef = useRef<any>(null);
                 <img alt='arrow-left' src={images.arrowRight} />
             </button>
         </div>
-        {/* <div className='bg-elipse-img absolute bottom-40 left-0 bg-no-repeat  w-full h-full'></div> */}
         
         <div className='mt-10 px-6 w-full '>
            <Slider ref={sliderRef} {...settings}>
            {
                 DexInfo.map((info, index) => {
                     return (
-                        <CardLayout key={index} className='px-6 py-8 lg:py-16 w-full rounded-[10px] min-h-[200px]'  variant={index === 0 ? 'cardGradient' : 'cardGradient'}>
+                        <CardLayout key={index} className='px-6 py-8 lg:py-16 w-full items-center justify-center rounded-[10px] lg:min-h-[200px] min-h-[260px]'  variant={index === 0 ? 'cardGradient' : 'cardGradient'}>
                             <h2 className='font-montserrat font-semibold text-[16px] lg:text-[20px] text-white pb-4'>{info.header}</h2>
                             <span className='text-gray-100 text-[13px] lg:text-[16px] lg:w-[395px] font-montserrat'>{info.content}</span>
                         </CardLayout>

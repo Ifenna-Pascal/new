@@ -31,7 +31,7 @@ const WorksCard:FC<IProp> = ({numbering, header, content}) => {
 
 const HowItWorks = () => {
     return (
-        <div className="flex flex-col px-8">
+        <div className="flex  w-full bg-center flex-col px-8">
             <h1 className="text-white text-center font-montserrat text-[40px]/[60px] mb-10">How It Works</h1>
             <div className="flex flex-col lg:flex-row items-center ">
                 <WorksCard 
